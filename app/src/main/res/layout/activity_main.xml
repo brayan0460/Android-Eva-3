@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="685dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="44dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Formulario de ingreso"
+                android:textColor="@color/black"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/txtCodigo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ingrese el id de usuario"
+                android:minHeight="48dp"/>
+
+            <EditText
+                android:id="@+id/txtNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ingrese nombre de usuario"
+                android:minHeight="48dp"/>
+            <Spinner
+                android:id="@+id/spUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="Usuario"
+                android:minHeight="48dp"/>
+
+            <EditText
+                android:id="@+id/txtAdmin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ingrese nombre Admin"
+                android:minHeight="48dp"/>
+
+            <EditText
+                android:id="@+id/txtDireccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ingrese la direccion del usuario"
+                android:minHeight="48dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="enviarDatosFirestore"
+                android:text="Enviar Datos"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="CargarLista"
+                android:text="Cargar Datos"/>
+
+
+            <ListView
+                android:id="@+id/Lista"
+                android:layout_width="match_parent"
+                android:layout_height="199dp"/>
+
+            <Button
+                android:id="@+id/botonMqtt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="irAMqtt"
+                android:text="Ir a Broker MQTT" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

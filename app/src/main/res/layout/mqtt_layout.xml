@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="360dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mensaje recibido: "
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"/>
+
+        <EditText
+            android:id="@+id/txtMensaje"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Ingrese su mensaje"
+            android:minHeight="48dp"/>
+
+        <Button
+            android:id="@+id/botonEnvioMensaje"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:text="Enviar Mensaje"/>
+
+        <!-- Botón para regresar a MainActivity -->
+        <Button
+            android:id="@+id/botonRegresar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Regresar al Formulario" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

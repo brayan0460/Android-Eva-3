@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1070548704480",
+    "project_id": "proyectofirebase-2386e",
+    "storage_bucket": "proyectofirebase-2386e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1070548704480:android:fac3d5e4a85ef7d8f4c485",
+        "android_client_info": {
+          "package_name": "com.brayan.aplicacioneva3"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpCk9BqNFs5CUVhK0o4cGwKGw9AnA1D74"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
